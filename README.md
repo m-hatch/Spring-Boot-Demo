@@ -16,7 +16,11 @@ The API exposes the following resources:
 
 * `GET /lannisters` - Fetches all members of House Lannister.  
 
+* `GET /lannisters/{id}` - Fetches a member of House Lannister by ID.  
+
 * `GET /starks` - Fetches all members of House Stark.  
+
+* `GET /starks/{id}` - Fetches a member of House Stark by ID. 
 
 * `GET /tournaments` - Fetches all Tournament info.  
 
