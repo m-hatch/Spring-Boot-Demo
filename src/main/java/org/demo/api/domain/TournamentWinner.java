@@ -22,7 +22,7 @@ public class TournamentWinner implements Serializable{
     private Long winnerId;
 
     @Column(name = "first_name")
-    private String FirstName;
+    private String firstName;
 
     @Column(name = "last_name")
     private String lastName;

@@ -8,9 +8,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Spring Data JPA repository for the house Lannister.
  */
-public interface LannisterRepository extends JpaRepository<Lannister,String>{
+public interface LannisterRepository extends JpaRepository<Lannister, Long>{
 
-    Page<Lannister> findAllByOrderByPosition(Pageable p);
+	Lannister findByOrderById(Long id);
+	Page<Lannister> findAllByOrderByPosition(Pageable p);
 }
 
 

@@ -15,12 +15,18 @@ import java.io.Serializable;
 @Data
 public class Lannister implements Serializable {
 
-    @Id
-    @Column(name = "name")
-    private String name;
+	@Id
+    @Column(name = "id")
+    private Long id;
+    
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
 
     @Column(name = "age")
-    private Long id;
+    private Long age;
 
     @Column(name = "position")
     private String position;
