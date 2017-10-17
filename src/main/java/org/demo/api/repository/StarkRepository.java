@@ -8,7 +8,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Spring Data JPA repository for the house Stark.
  */
-public interface StarkRepository extends JpaRepository<Stark,String>{
+public interface StarkRepository extends JpaRepository<Stark, Long>{
 
+    Stark findByOrderById(Long id);
     Page<Stark> findAllByOrderByPosition(Pageable p);
 }
